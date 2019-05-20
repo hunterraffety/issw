@@ -14,36 +14,23 @@
 // -------- Regular Headline - 32px;
 // -------- Body 21px;
 */
-
-// font imports
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Roboto&display=swap');
-
-// variables
-@logoFont: 'Roboto', sans-serif;
-@bodyFont: 'Exo 2', sans-serif;
-
-// mixins
-
-// globals
 html,
 body {
-  font-family: @bodyFont;
+  font-family: 'Exo 2', sans-serif;
   font-size: 62.5%;
 }
-
 .logo {
   font-family: 'Exo 2', sans-serif;
   color: #41464f;
   font-size: 3.2rem;
 }
-
 h1 {
   font-size: 3.6rem;
 }
-
 h2,
 .lightaccent {
-  font-family: @bodyFont;
+  font-family: 'Exo 2', sans-serif;
   color: #707071;
   font-size: 2.8rem;
 }
