@@ -17,20 +17,109 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Roboto&display=swap');
 html,
 body {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
+  background: #b9dae6;
+  background: radial-gradient(circle, #ffffff 0%, #b9dae6 100%);
 }
-.logo {
-  font-family: 'Exo 2', sans-serif;
-  color: #41464f;
-  font-size: 3.2rem;
+/* Container */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  /* CTA */
+  /* End CTA */
+  /* Action items */
 }
-h1 {
+.container .cta {
+  padding: 23rem 10rem;
+  width: 70%;
+  height: 100vh;
+}
+.container .cta .top {
+  width: 95%;
+}
+.container .cta .bottom {
+  width: 55%;
+}
+.container .cta .cta-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  background: #41464f;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: #ffffff;
+}
+.container .cta h1 {
   font-size: 3.6rem;
 }
-h2,
-.lightaccent {
-  font-family: 'Exo 2', sans-serif;
+.container .cta h2,
+.container .cta .lightaccent {
+  font-family: 'Roboto', sans-serif;
   color: #707071;
   font-size: 2.8rem;
 }
+.container .action {
+  background: #ffffff;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container .action .logo {
+  background: blue;
+}
+.container .action .logo h1 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.container .action .logo h1 .highlight {
+  color: #d28994;
+}
+.container .action .logo h1 .over {
+  position: relative;
+  left: 3.5rem;
+  bottom: 1rem;
+}
+.container .action .logo .fas {
+  font-size: 6rem;
+  color: #b9dae6;
+  display: inline;
+  position: absolute;
+}
+.container .action .selection {
+  background: purple;
+}
+.container .action .selection form {
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: inline;
+}
+.container .action .selection form button {
+  display: inline;
+  position: relative;
+}
+.container .action .selection select {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+}
+.container .action .links {
+  background: red;
+}
+.container .action .links .sign-in-btn {
+  width: 50%;
+  background: green;
+  display: block;
+}
+.container .action .links .about-btn {
+  width: 50%;
+  background: yellow;
+  display: block;
+}
+/* End action items */
+/* Selections */

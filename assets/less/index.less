@@ -19,8 +19,16 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Roboto&display=swap');
 
 // variables
-@logoFont: 'Roboto', sans-serif;
-@bodyFont: 'Exo 2', sans-serif;
+@logoFont: 'Exo 2', sans-serif;
+@bodyFont: 'Roboto', sans-serif;
+@btnColor: #9abca7;
+@highlight: #d28994;
+@lcolor: #b9dae6;
+@dgray: #41464f;
+@mgray: #707071;
+@lgray: #d1d1d1;
+@xlgray: #dbdbdb;
+@white: #ffffff;
 
 // mixins
 
@@ -29,21 +37,120 @@ html,
 body {
   font-family: @bodyFont;
   font-size: 62.5%;
+  background: rgb(185, 218, 230);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(185, 218, 230, 1) 100%
+  );
 }
 
-.logo {
-  font-family: 'Exo 2', sans-serif;
-  color: #41464f;
-  font-size: 3.2rem;
-}
+/* Container */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 
-h1 {
-  font-size: 3.6rem;
-}
+  /* CTA */
+  .cta {
+    padding: 23rem 10rem;
+    width: 70%;
+    height: 100vh;
 
-h2,
-.lightaccent {
-  font-family: @bodyFont;
-  color: #707071;
-  font-size: 2.8rem;
+    .top {
+      width: 95%;
+    }
+
+    .bottom {
+      width: 55%;
+    }
+
+    .cta-text {
+      font-family: @bodyFont;
+      font-size: 6rem;
+      font-weight: 900;
+      background: @dgray;
+      padding: 0.5rem;
+      margin: 1rem 0;
+      color: @white;
+    }
+
+    h1 {
+      font-size: 3.6rem;
+    }
+
+    h2,
+    .lightaccent {
+      font-family: @bodyFont;
+      color: #707071;
+      font-size: 2.8rem;
+    }
+  }
+  /* End CTA */
+
+  /* Action items */
+  .action {
+    background: @white;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .logo {
+      background: blue;
+      h1 {
+        font-family: @logoFont;
+        font-size: 6rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        .highlight {
+          color: @highlight;
+        }
+        .over {
+          position: relative;
+          left: 3.5rem;
+          bottom: 1rem;
+        }
+      }
+      .fas {
+        font-size: 6rem;
+        color: @lcolor;
+        display: inline;
+        position: absolute;
+      }
+    }
+    .selection {
+      background: purple;
+      form {
+        font-size: 2rem;
+        text-transform: uppercase;
+        display: inline;
+        button {
+          display: inline;
+          position: relative;
+        }
+      }
+      select {
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+      }
+    }
+    .links {
+      background: red;
+      .sign-in-btn {
+        width: 50%;
+        background: green;
+        display: block;
+      }
+      .about-btn {
+        width: 50%;
+        background: yellow;
+        display: block;
+      }
+    }
+  }
 }
+/* End action items */
+
+/* Selections */
