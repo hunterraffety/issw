@@ -1,5 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+/* -- Colors -- */
+// #9ABCA7; // Button Color
+// #D28994; // Highlights
+// #707071; // Darker Gray
+// #41464F; // Darkest gray // Typeface - Body (Roboto) -- Logo (Exo 2)
+// // Main headline - 60px
+// // Regular Headline - 32px;
+// // Body 21px;
 
+// #D1D1D1; // Mid-gray
+// #B9DAE6; // Logo Color / Button Color
+// #DBDBDB; // Light-gray
+
+// font imports
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Roboto&display=swap');
+
+// variables
+@font-stack {
+  font-family: 'Roboto', sans-serif;
+}
+
+// mixins
+
+// globals
+html,
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+h1,
+.logo {
+  font-family: 'Exo 2', sans-serif;
+  color: #41464f;
+  font-size: 3.2rem;
+}
+
+h2,
+.lightaccent {
+  font-family: @font-stack;
+  color: #707071;
+  font-size: 2.8rem;
 }
